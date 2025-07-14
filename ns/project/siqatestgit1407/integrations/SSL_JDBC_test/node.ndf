@@ -45,9 +45,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">testuser</value>
-    <value name="createdDate">1752518347521</value>
-    <value name="lastModifiedDate">1752518347521</value>
+    <value name="lastModifiedBy">kusi_ibm</value>
+    <value name="lastModifiedDate">1752518405240</value>
     <value name="displayName">SSL_JDBC_test</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -70,17 +69,14 @@
         <value name="nodePathNew">0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">1</number>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
       </record>
-    </record>
-    <record name="edgeServer" javaclass="com.wm.util.Values">
-      <value name="group">Default</value>
-      <value name="id">default</value>
-      <value name="name">Cloud Execution</value>
     </record>
   </record>
   <value name="svc_in_validator_options">none</value>
   <value name="svc_out_validator_options">none</value>
-  <value name="auditoption">0</value>
+  <value name="auditoption">2</value>
   <null name="auditfields_input"/>
   <null name="auditfields_output"/>
   <record name="auditsettings" javaclass="com.wm.util.Values">
