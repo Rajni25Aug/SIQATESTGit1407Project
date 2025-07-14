@@ -11,6 +11,11 @@ packages:
   version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
+- name: SSL_JDBC_Test
+  gitServerName: SIQAPsurGit
+  gitUrl: https://github.com/prabhakarsag
+  gitUsername: prabhakarsag
+  gitBranch: main
 services:
 - serviceName: project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
@@ -45,49 +50,49 @@ services:
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
 configurationVariables:
-  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
-  : 9.46.196.248
-  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
-  : "0"
+  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
   ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
   : driverTest
-  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
-  : "0"
-  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
-  : "10"
-  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
-  : "1000"
-  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
-  : "false"
-  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
-  : com.mysql.cj.jdbc.MysqlDataSource
-  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
-  : tcp
-  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
-  : NO_TRANSACTION
   ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
   : "1"
+  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
+  : siqatest
+  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
+  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
   ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
   : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
+  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
   ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
   : "1000"
+  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : MYSQL_DATABASE
+  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : 9.46.196.248
   ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
   : "3306"
   ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
   : MySQL
   ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
   : ""
+  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
   ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
   : "10"
+  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
+  : "0"
   ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
   : "false"
-  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
-  : loginTimeout=60;driverType=thin;
-  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
-  : siqatest
-  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
-  : ""
-  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
-  : MYSQL_DATABASE
+  ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : NO_TRANSACTION
   ? artConnection.SIQATESTGit1407Project.project.siqatestgit1407.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
   : "1"
